@@ -160,9 +160,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="ScriptingCore.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="script.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ScriptingCore.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
