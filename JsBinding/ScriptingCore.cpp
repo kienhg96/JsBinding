@@ -21,8 +21,7 @@ void ScriptingCore::createContext() {
 
 void ScriptingCore::createGlobal() {
 	JS::CompartmentOptions options;
-	_global = JS::PersistentRootedObject(_cx, JS_NewGlobalObject(_cx, &global_class, nullptr, JS::DontFireOnNewGlobalHook, options));
+	_global = JS::PersistentRootedObject(_cx, JS_NewGlobalObject(_cx, &global_class, nullptr, JS::FireOnNewGlobalHook, options));
 	JSAutoCompartment ac(_cx, _global);
 	JS_InitStandardClasses(_cx, _global);
-	JS_FireOnNewGlobalObject(_cx, _global);
 }
