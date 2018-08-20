@@ -3,4 +3,14 @@
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Filter Include="script">
+      <UniqueIdentifier>{3d505d93-2a67-43b6-91b4-b5cd8382fb8e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="script.js">
+      <Filter>script</Filter>
+    </None>
+  </ItemGroup>
 </Project>
